@@ -37,7 +37,7 @@ Some of the collisions are sticking to each other because the angles insist on r
 
 Note a video link below.
 
-![FULL YOUTUBE VIDEO HERE IF INTERESTED](https://www.youtube.com/watch?v=o-BrqI63vDg&t=14s)
+[FULL YOUTUBE VIDEO HERE IF INTERESTED](https://www.youtube.com/watch?v=o-BrqI63vDg&t=14s)
 
 One bug I faced was that the words were jittering back and forth when touching. That's because collisions were recording like "Word 2, Word 7" and "Word 7, Word 2". To overcome this challenge, I changed to search for the existence of a reverse pair in the vector before adding it, in the "add_transparent_text_to_desktop()" function where most of this happens. I don't see a major run-time cost given these vectors in collisions only had 2 to 5 entries at most.
 
